@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            background-image: url(./img/star.png);
+            background-repeat: repeat;
+        }
+
+        nav.navbar {
+            background-color: #ff6400;
+        }
+
+        div.wrapper {
+            background-color: white;
+            border-radius: 0.3rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            margin-top: 2.5rem;
+        }
+
+        h2 {
+            background: #fff;
+            font-size: 140%;
+            background-image: url(img/h2.gif);
+            background-repeat: repeat-y;
+            background-position: -10px 0px;
+            padding: 3px 30px;
+            border-radius: 5px;
+            margin: 0 0 20px;
+            border: 2px solid #c8c8c8;
+            font-weight: bold;
+        }
+
+        h3 {
+            background: transparent;
+            font-size: 110%;
+            border-left: 10px solid #FF6400;
+            margin: 0 0 20px;
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+
+        
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+
+
+        .youtube {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .youtube iframe {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        p.sns_icon {
+            font-size: 600%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="./img/Logo.png" height="30" alt="さとちびの部屋" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu1"
+            aria-controls="navmenu1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu1">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#project">Project</a>
+                <a class="nav-item nav-link" href="#sns">SNS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div id="about" class="wrapper">
+            <h2>さとちびとは?</h2>
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jaJsoSafk24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        
+
+        <div id="project" class="wrapper">
+            <h2>プロジェクト</h2>
+            <p>イーブイが好きなので、イーブイと結婚するのが当面の目標です。</p>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a href="#project-eevee-3d" class="nav-link active" role="tab" data-toggle="tab">3Dでイーブイと結婚する</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project-eevee-2d" class="nav-link" role="tab" data-toggle="tab">2Dでイーブイと結婚する</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project-question" class="nav-link" role="tab" data-toggle="tab">???</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project-app" class="nav-link" role="tab" data-toggle="tab">その他アプリ開発</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" id="project-eevee-3d" class="tab-pane active fade show">
+                    <p style="font-size: 150%;"><a href="https://www.youtube.com/playlist?list=PLjY-n1Aqk5eaD1lN_VEoBmXDaVX04sWld">Youtubeにて随時更新中です。</a></p>
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pvG01DvqT_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div role="tabpanel" id="project-eevee-2d" class="tab-pane fade">
+                    <p>漫画風なドローソフトウェアを自作して、そのソフトウェア上でイーブイを描くことで実現させます。</p>
+                    <p>漫画風なドローソフトウェアである<a href="http://mngdraw.com/">MNGDrawの詳細はこちら。</a></p>
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/07EPI5CzxEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div role="tabpanel" id="project-question" class="tab-pane fade">
+                    <p>これ以外にもポケモンに関する秘密のプロジェクトがあります。<br>
+                    たぶん、世界で10人くらいしか発想できていないプロジェクトです。<br>
+                    これには、イーブイ以外のたくさんのポケモンの3DCGモデルが必要だが、果たしてできるのか・・・?
+                    </p>
+                </div>
+                <div role="tabpanel" id="project-app" class="tab-pane fade">
+                    <p>iPhone向けのボウリングゲーム(クソアプリ)をAppStoreにて公開しています。<br>
+                    <a href="https://appsto.re/i6dL8Cc">詳しくはこちらから。</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sns" class="wrapper">
+            <h2>SNS・その他のWebサービス</h2>
+            <p class="sns_icon">
+                <a href="https://www.youtube.com/user/satochibi0120/"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/satochibi0120"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/satochibi"><i class="fab fa-github"></i></a>
+                <a href="https://soundcloud.com/satochibi"><i class="fab fa-soundcloud"></i></a>
+                <a href="http://booklog.jp/users/satochibi"><i class="fas fa-book-open"></i></a>
+                <a href="https://sketchfab.com/satochibi0120"><i class="fas fa-cube"></i></a>
+                <a href="http://satochibi.hatenadiary.com/"><i class="fas fa-blog"></i></a>
+            </p>
+        </div>
+        
+    </div>
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
