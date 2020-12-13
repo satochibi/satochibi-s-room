@@ -175,13 +175,13 @@
         <div id="sns" class="wrapper">
             <h2>SNS・その他のWebサービス</h2>
             <p class="sns_icon">
-                <a href="https://www.youtube.com/user/satochibi0120/"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com/satochibi0120"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/satochibi"><i class="fab fa-github"></i></a>
-                <a href="https://soundcloud.com/satochibi"><i class="fab fa-soundcloud"></i></a>
-                <a href="http://booklog.jp/users/satochibi"><i class="fas fa-book-open"></i></a>
-                <a href="https://sketchfab.com/satochibi0120"><i class="fas fa-cube"></i></a>
-                <a href="http://satochibi.hatenadiary.com/"><i class="fas fa-blog"></i></a>
+                <a href="https://www.youtube.com/user/satochibi0120/" data-toggle="tooltip" title="YouTube(動画集)"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/satochibi0120" data-toggle="tooltip" title="Twitter(新着情報)"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/satochibi" data-toggle="tooltip" title="GitHub(プログラミング)"><i class="fab fa-github"></i></a>
+                <a href="https://soundcloud.com/satochibi" data-toggle="tooltip" title="SoundCloud(音楽制作)"><i class="fab fa-soundcloud"></i></a>
+                <a href="http://booklog.jp/users/satochibi" data-toggle="tooltip" title="ブクログ(読書)"><i class="fas fa-book-open"></i></a>
+                <a href="https://sketchfab.com/satochibi0120" data-toggle="tooltip" title="Sketchfab(3Dモデリング)"><i class="fas fa-cube"></i></a>
+                <a href="http://satochibi.hatenadiary.com/" data-toggle="tooltip" title="技術的なブログ"><i class="fas fa-blog"></i></a>
             </p>
         </div>
         
@@ -189,6 +189,9 @@
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+    </script>
 </body>
 
 </html>
