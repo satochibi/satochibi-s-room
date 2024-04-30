@@ -134,7 +134,7 @@
 </head>
 
 <body class="pt-5">
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top nav-underline">
     <div class="container-fluid">
 
       <a class="navbar-brand d-inline-flex align-items-center" id="logo" href="#">
@@ -163,7 +163,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
 
     <div id="about" class="wrapper">
       <h2>さとちびとは?</h2>
@@ -224,7 +224,7 @@
       </div>
     </div>
 
-    <div id="sns" class="wrapper">
+    <div id="sns" class="wrapper mb-5">
       <h2>SNS・その他のWebサービス</h2>
       <p class="sns_icon">
         <a class="youtube_icon" href="https://www.youtube.com/@satochibi" data-toggle="tooltip" title="YouTube(動画集)">
