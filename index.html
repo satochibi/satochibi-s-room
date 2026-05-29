@@ -151,7 +151,7 @@
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="メニュー">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="メニューを開く">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -297,6 +297,19 @@
     </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    navbarCollapse.addEventListener('focusout', function (e) {
+      if (
+        !navbarCollapse.contains(e.relatedTarget) &&
+        window.getComputedStyle(navbarToggler).display !== 'none'
+      ) {
+        bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+      }
+    });
+  </script>
 </body>
 
 </html>
